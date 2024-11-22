@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Md Kowser Ahmed",
+    "role": "Student",
+    "department": "Computer Technology",
+    "semester": "4th",
+    "session": "2022-2023",
+    "text": "Studying at BIST has been a life-changing experience. The Computer Technology department offers excellent practical sessions and modern lab facilities. The teachers are always ready to guide us, making learning enjoyable and rewarding.",
+    "rating": 5,
+    "image": "https://i.ibb.co/tZ37cTK/kowser-pic-new.png"
+  },
+  {
+    "id": 2,
+    "name": "Md Munna",
+    "role": "Student",
+    "department": "Computer Technology",
+    "semester": "4th",
+    "session": "2022-2023",
+    "text": "BIST has provided me with incredible opportunities to excel in the field of Computer Technology. The supportive faculty, well-equipped labs, and career-focused curriculum are unparalleled.",
+    "rating": 5,
+    "image": "https://i.ibb.co/4YX2Mrw/277364680-288813403413610-6254624213258738741-n.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tamanna Akter",
+    "role": "Student",
+    "department": "Computer Technology",
+    "semester": "4th",
+    "session": "2022-2023",
+    "text": "BIST is the perfect place to nurture your skills and prepare for the industry. The focus on hands-on learning and programming workshops has truly helped me grow as a future IT professional.",
+    "rating": 5,
+    "image": "https://i.ibb.co/52Byk9j/7c7fcb47e65fec252042d36326030554.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Niyon Ahmed",
+    "role": "Student",
+    "department": "Computer Technology",
+    "semester": "4th",
+    "session": "2022-2023",
+    "text": "BIST's Computer Technology department fosters a friendly and innovative learning environment. The curriculum is aligned with industry standards, which ensures we are job-ready upon graduation.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/men/48.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Karim Hossain",
+    "role": "Student",
+    "department": "Electrical Technology",
+    "semester": "4th",
+    "session": "2018-2019",
+    "text": "The Electrical Technology faculty at BIST are industry experts. The courses here prepared me for real-world challenges with confidence.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/men/45.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Fatema Akter",
+    "role": "Student",
+    "department": "Civil Technology",
+    "semester": "3rd",
+    "session": "2021-2022",
+    "text": "Studying Civil Technology at BIST has been an amazing experience. The structured curriculum and practical learning were beyond expectations.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/women/47.jpg"
+  }
+]

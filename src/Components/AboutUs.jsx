@@ -124,10 +124,13 @@ const AboutUs = () => {
       {/* Bottom CTA */}
       <div className="mt-10 flex flex-col lg:flex-row items-center justify-between gap-4">
         <Link
-          to="/discover"
-          className="px-6 py-3 bg-orange-500 text-white font-bold rounded-lg flex items-center gap-2 hover:bg-orange-600"
+        to="/about"
+          className="bg-orange-500 text-white font-semibold py-3 px-10 flex items-center hover:bg-[#116e63] shadow-md relative"
+          style={{
+            borderRadius: "20px 30px 30px 0px",
+          }}
         >
-          Discover More →
+          About More
         </Link>
         <Link
           to="/contact"
