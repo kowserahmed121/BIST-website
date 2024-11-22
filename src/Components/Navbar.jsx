@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className=" text-lg flex flex-col md:flex-row gap-4 md:gap-10 ">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/about">About Us</NavLink>
-      <NavLink>Admission</NavLink>
+      <NavLink to="/courses">Our Courses</NavLink>
       <NavLink>Blog</NavLink>
       <NavLink>Contact</NavLink>
     </div>

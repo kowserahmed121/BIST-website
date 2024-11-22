@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "course_name": "Diploma in Mechanical Engineering",
+    "image": "https://example.com/images/mechanical.jpg",
+    "rating": 4.5,
+    "description": "Learn the fundamentals of mechanical systems, machine design, and manufacturing.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 50,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 2,
+    "course_name": "Diploma in Computer Technology",
+    "image": "https://example.com/images/computer.jpg",
+    "rating": 4.7,
+    "description": "Master programming, networking, web development, and IT fundamentals.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 55,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 3,
+    "course_name": "Diploma in Electrical Engineering",
+    "image": "https://example.com/images/electrical.jpg",
+    "rating": 4.6,
+    "description": "Focus on electrical circuits, power systems, and innovative electronics.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 52,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 4,
+    "course_name": "Diploma in Civil Technology",
+    "image": "https://example.com/images/civil.jpg",
+    "rating": 4.4,
+    "description": "Explore construction, structural design, and project management skills.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 53,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 5,
+    "course_name": "Diploma in Architecture Technology",
+    "image": "https://example.com/images/architecture.jpg",
+    "rating": 4.8,
+    "description": "Learn architectural design, drafting, and building planning.",
+    "seats": 50,
+    "duration": "4 years",
+    "money": "৳ 56,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 6,
+    "course_name": "Diploma in Electronics Technology",
+    "image": "https://example.com/images/electronics.jpg",
+    "rating": 4.5,
+    "description": "Understand electronics circuits, digital systems, and communication technology.",
+    "seats": 55,
+    "duration": "4 years",
+    "money": "৳ 54,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 7,
+    "course_name": "Diploma in Automobile Technology",
+    "image": "https://example.com/images/automobile.jpg",
+    "rating": 4.6,
+    "description": "Specialize in automotive systems, design, and vehicle maintenance.",
+    "seats": 40,
+    "duration": "4 years",
+    "money": "৳ 60,000/year",
+    "semester": "8 semesters"
+  },
+  {
+    "id": 8,
+    "course_name": "Diploma in Textile Technology",
+    "image": "https://example.com/images/textile.jpg",
+    "rating": 4.3,
+    "description": "Dive into textile production, fabric design, and quality control.",
+    "seats": 45,
+    "duration": "4 years",
+    "money": "৳ 48,000/year",
+    "semester": "8 semesters"
+  }
+]

@@ -1,5 +1,12 @@
 import React from "react";
-import { FaRegLightbulb, FaCogs, FaLaptopCode, FaBolt } from "react-icons/fa";
+import {
+  FaRegLightbulb,
+  FaCogs,
+  FaLaptopCode,
+  FaBolt,
+  FaBuilding,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 import img from "../assets/banner4.jpg";
 import img1 from "../assets/banner3.jpg";
 
@@ -24,12 +31,13 @@ const AboutUs = () => {
           </h1>
           <p className="text-gray-600">
             BIST is a renowned Polytechnic Institute offering a comprehensive
-            4-year Diploma in Engineering program. We specialize in three key
-            disciplines: <strong>Mechanical Engineering</strong>,{" "}
-            <strong>Computer Technology</strong>, and{" "}
-            <strong>Electrical Engineering</strong>. Our mission is to equip
-            students with the skills, knowledge, and confidence needed to excel
-            in their careers as Diploma Engineers.
+            4-year Diploma in Engineering program. We specialize in four key
+            disciplines: <strong>Mechanical Technology</strong>,{" "}
+            <strong>Computer Technology</strong>,{" "}
+            <strong>Electrical Technology</strong>, and{" "}
+            <strong>Civil Technology</strong>. Our mission is to equip students
+            with the skills, knowledge, and confidence needed to excel in their
+            careers as Diploma Engineers.
           </p>
           <div className="space-y-4">
             <div className="flex items-center gap-4">
@@ -72,6 +80,18 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
+            <div className="flex items-center gap-4">
+              <div className="p-4 bg-orange-100 text-orange-500 rounded-full">
+                <FaBuilding size={24} />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">Civil Technology</h3>
+                <p className="text-gray-500">
+                  Gain expertise in construction, structural design, and project
+                  management.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -103,18 +123,18 @@ const AboutUs = () => {
 
       {/* Bottom CTA */}
       <div className="mt-10 flex flex-col lg:flex-row items-center justify-between gap-4">
-        <a
-          href="#"
+        <Link
+          to="/discover"
           className="px-6 py-3 bg-orange-500 text-white font-bold rounded-lg flex items-center gap-2 hover:bg-orange-600"
         >
           Discover More →
-        </a>
-        <a
-          href="tel:+8801770609016"
+        </Link>
+        <Link
+          to="/contact"
           className="px-6 py-3 bg-green-500 text-white font-bold rounded-lg flex items-center gap-2 hover:bg-green-600"
         >
           Call Now +88 01770 609016
-        </a>
+        </Link>
       </div>
     </div>
   );
