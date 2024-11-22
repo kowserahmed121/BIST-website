@@ -2,7 +2,7 @@
   {
     "id": 1,
     "course_name": "Diploma in Mechanical Engineering",
-    "image": "https://example.com/images/mechanical.jpg",
+    "image": "https://i.ibb.co.com/KrMFTQh/305570055-379281624400934-7871601823722883934-n.jpg",
     "rating": 4.5,
     "description": "Learn the fundamentals of mechanical systems, machine design, and manufacturing.",
     "seats": 60,
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "course_name": "Diploma in Computer Technology",
-    "image": "https://example.com/images/computer.jpg",
+    "image": "https://i.ibb.co.com/PDHpFxJ/242079815-279750110649411-9009763809927410851-n.jpg",
     "rating": 4.7,
     "description": "Master programming, networking, web development, and IT fundamentals.",
     "seats": 60,
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "course_name": "Diploma in Electrical Engineering",
-    "image": "https://example.com/images/electrical.jpg",
+    "image": "https://i.ibb.co.com/55yfKkd/274154483-373140024643752-4941556462851882176-n.jpg",
     "rating": 4.6,
     "description": "Focus on electrical circuits, power systems, and innovative electronics.",
     "seats": 60,
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "course_name": "Diploma in Civil Technology",
-    "image": "https://example.com/images/civil.jpg",
+    "image": "https://i.ibb.co.com/qrFmrNt/130541145-115245393766551-4856516181470762763-n.jpg",
     "rating": 4.4,
     "description": "Explore construction, structural design, and project management skills.",
     "seats": 60,
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "course_name": "Diploma in Architecture Technology",
-    "image": "https://example.com/images/architecture.jpg",
+    "image": "https://i.ibb.co.com/bb0HXKb/294418463-467550225202731-8470650264475387099-n.jpg",
     "rating": 4.8,
     "description": "Learn architectural design, drafting, and building planning.",
     "seats": 50,
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "course_name": "Diploma in Electronics Technology",
-    "image": "https://example.com/images/electronics.jpg",
+    "image": "https://i.ibb.co.com/zJzW654/253134306-310930470864708-700481019156233325-n.jpg",
     "rating": 4.5,
     "description": "Understand electronics circuits, digital systems, and communication technology.",
     "seats": 55,
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "course_name": "Diploma in Automobile Technology",
-    "image": "https://example.com/images/automobile.jpg",
+    "image": "https://i.ibb.co.com/ZhbXfSs/252910878-310930487531373-1776561447953916403-n.jpg",
     "rating": 4.6,
     "description": "Specialize in automotive systems, design, and vehicle maintenance.",
     "seats": 40,
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "course_name": "Diploma in Textile Technology",
-    "image": "https://example.com/images/textile.jpg",
+    "image": "https://i.ibb.co.com/qkq1fsj/291624651-457733169517770-1187731978864082552-n.jpg",
     "rating": 4.3,
     "description": "Dive into textile production, fabric design, and quality control.",
     "seats": 45,

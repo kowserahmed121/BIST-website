@@ -4,11 +4,56 @@ import logo from "../assets/logo.jpg";
 const Navbar = () => {
   const links = (
     <div className=" text-lg flex flex-col md:flex-row gap-4 md:gap-10 ">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About Us</NavLink>
-      <NavLink to="/courses">Our Courses</NavLink>
-      <NavLink>Blog</NavLink>
-      <NavLink>Contact</NavLink>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive
+            ? "text-orange-500 font-bold border-b-2 border-orange-500"
+            : "text-gray-800 hover:text-orange-500 transition-all duration-300"
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive
+            ? "text-orange-500 font-bold border-b-2 border-orange-500"
+            : "text-gray-800 hover:text-orange-500 transition-all duration-300"
+        }
+      >
+        About Us
+      </NavLink>
+      <NavLink
+        to="/courses"
+        className={({ isActive }) =>
+          isActive
+            ? "text-orange-500 font-bold border-b-2 border-orange-500"
+            : "text-gray-800 hover:text-orange-500 transition-all duration-300"
+        }
+      >
+        Our Courses
+      </NavLink>
+      <NavLink
+        to="/blog"
+        className={({ isActive }) =>
+          isActive
+            ? "text-orange-500 font-bold border-b-2 border-orange-500"
+            : "text-gray-800 hover:text-orange-500 transition-all duration-300"
+        }
+      >
+        Blog
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive
+            ? "text-orange-500 font-bold border-b-2 border-orange-500"
+            : "text-gray-800 hover:text-orange-500 transition-all duration-300"
+        }
+      >
+        Contact
+      </NavLink>
     </div>
   );
   return (
