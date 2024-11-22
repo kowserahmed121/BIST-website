@@ -16,7 +16,7 @@ const Testimonial = () => {
     <section className="py-16  bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
      <div className="w-11/12 mx-auto">
      <div className="w-11/12 mx-auto text-center space-y-6">
-        <h2 className="text-lg font-semibold text-orange-400">TESTIMONIALS</h2>
+        <h2 className="text-2xl font-semibold text-orange-400">TESTIMONIALS</h2>
         <h1 className="text-4xl font-bold">What Our Students Say</h1>
         <p className="text-gray-200 text-lg max-w-3xl mx-auto">
           Hear from our students about their experiences at BACE Institute of

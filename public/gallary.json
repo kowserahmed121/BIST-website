@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Computer Lab Session",
+    "description": "Students actively participating in hands-on lab sessions.",
+    "image": "https://randomuser.me/api/portraits/lego/1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Group Study",
+    "description": "Collaborative learning in a peaceful environment.",
+    "image": "https://randomuser.me/api/portraits/lego/2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Library Exploration",
+    "description": "Students exploring books and resources in the library.",
+    "image": "https://randomuser.me/api/portraits/lego/3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Campus Life",
+    "description": "A glimpse of the vibrant campus life at BIST.",
+    "image": "https://randomuser.me/api/portraits/lego/4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Workshop Event",
+    "description": "Interactive workshops conducted by expert trainers.",
+    "image": "https://randomuser.me/api/portraits/lego/5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Cultural Fest",
+    "description": "Students celebrating cultural diversity with enthusiasm.",
+    "image": "https://randomuser.me/api/portraits/lego/6.jpg"
+  }
+]
