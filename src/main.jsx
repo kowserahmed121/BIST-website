@@ -6,6 +6,8 @@ import Root from "./Root/Root";
 import Home from "./Page/Home";
 import AllCourses from "./Page/AllCourses";
 import AboutUs from "./Components/AboutUs";
+import Testimonial from "./Components/Testimonial";
+import Contact from "./Components/Contact";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/testimonials",
+        element: <Testimonial></Testimonial>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
     ],
   },

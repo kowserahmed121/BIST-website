@@ -58,9 +58,9 @@ const Footer = () => {
           <ul className="text-gray-300 space-y-2">
             <li>Campus Safety</li>
             <li>Student Activities</li>
-            <li>Mechanical Engineering</li>
+            <li>Mechanical Technology</li>
             <li>Computer Technology</li>
-            <li>Electrical Engineering</li>
+            <li>Electrical Technology</li>
             <li>Civil Technology</li>
           </ul>
         </div>
@@ -96,8 +96,9 @@ const Footer = () => {
           <FaInstagram className="cursor-pointer hover:text-orange-500" />
         </div>
         <p className="text-gray-400">
-          © {new Date().getFullYear()} BACE Institute of Science and Technology.
-          All Rights Reserved.
+          © {new Date().getFullYear()} Md Kowser Ahmed 
+          <small>  (computer department-4th semester)</small>
+       
         </p>
       </div>
     </footer>

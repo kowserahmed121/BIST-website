@@ -35,14 +35,14 @@ const Navbar = () => {
         Our Courses
       </NavLink>
       <NavLink
-        to="/blog"
+        to="/testimonials"
         className={({ isActive }) =>
           isActive
             ? "text-orange-500 font-bold border-b-2 border-orange-500"
             : "text-gray-800 hover:text-orange-500 transition-all duration-300"
         }
       >
-        Blog
+        Testimonials
       </NavLink>
       <NavLink
         to="/contact"

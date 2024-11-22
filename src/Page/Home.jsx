@@ -6,6 +6,8 @@ import WhyChooseUs from "../Components/WhyChooseUs";
 import Testimonial from "../Components/Testimonial";
 import PhotoGallery from "../Components/PhotoGallery";
 import OurTeachers from "../Components/OurTeachers";
+import OurSkills from "../Components/OurSkills";
+import Contact from "../Components/Contact";
 
 const Home = () => {
   return (
@@ -15,8 +17,10 @@ const Home = () => {
       <Courses></Courses>
       <WhyChooseUs></WhyChooseUs>
       <Testimonial></Testimonial>
-      <PhotoGallery></PhotoGallery>
       <OurTeachers></OurTeachers>
+      <PhotoGallery></PhotoGallery>
+      <OurSkills></OurSkills>
+      <Contact></Contact>
     </div>
   );
 };
