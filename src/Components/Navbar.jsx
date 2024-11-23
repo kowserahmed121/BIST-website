@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaPen } from "react-icons/fa";
 import logo from "../assets/logo.jpg";
 const Navbar = () => {
@@ -96,7 +96,8 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <button
+          <Link
+            to="/auth/login"
             className="bg-orange-500 text-white font-semibold py-3 px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
             style={{
               borderRadius: "20px 30px 30px 0px",
@@ -104,7 +105,7 @@ const Navbar = () => {
           >
             <FaPen className="mr-2" />
             Sign In
-          </button>
+          </Link>
         </div>
       </div>
     </div>

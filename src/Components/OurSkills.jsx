@@ -29,9 +29,9 @@ const OurSkills = () => {
               <option value="" disabled>
                 Choose Course
               </option>
-              <option value="CSE">Computer Science</option>
-              <option value="EEE">Electrical Engineering</option>
-              <option value="BBA">Business Administration</option>
+              <option value="CSE">Computer Technology</option>
+              <option value="EEE">Electrical Technology</option>
+              <option value="BBA">Civil Technology</option>
             </select>
             <textarea
               placeholder="Type Message"

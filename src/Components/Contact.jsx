@@ -17,7 +17,9 @@ const Contact = () => {
             <div className="bg-orange-100 p-4 rounded-full ">
               <FaMapMarkerAlt className="text-orange-500 text-3xl" />
             </div>
-            <h4 className="text-lg font-semibold mt-4 mb-2">Office Address</h4>
+            <h4 className="text-lg font-semibold mt-4 mb-2">
+              Institute Address
+            </h4>
             <p className="text-gray-600 text-sm">
               Mograpar, Sonargoan, Narayanganj
             </p>

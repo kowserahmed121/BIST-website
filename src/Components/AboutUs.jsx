@@ -71,9 +71,7 @@ const AboutUs = () => {
                 <FaBolt size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">
-                  Electrical Engineering
-                </h3>
+                <h3 className="text-lg font-semibold">Electrical Technology</h3>
                 <p className="text-gray-500">
                   Specialize in power systems, electrical circuits, and
                   innovative electronics.
@@ -124,7 +122,7 @@ const AboutUs = () => {
       {/* Bottom CTA */}
       <div className="mt-10 flex flex-col lg:flex-row items-center justify-between gap-4">
         <Link
-        to="/about"
+          to="/about"
           className="bg-orange-500 text-white font-semibold py-3 px-10 flex items-center hover:bg-[#116e63] shadow-md relative"
           style={{
             borderRadius: "20px 30px 30px 0px",
