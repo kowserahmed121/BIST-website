@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaUser, FaEnvelope, FaLock, FaImage } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
+  const { createUser, setUser } = useContext(AuthContext);
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+    const name = form.get("name");
+    const email = form.get("email");
+    const photo = form.get("photo");
+    const password = form.get("password");
+
+    createUser(email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        setUser(user);
+      })
+      .catch((err) => {
+        const error = err.message;
+        console.log(error);
+      });
+  };
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-100 to-blue-100">
+    <section
+      data-aos="zoom-in"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-100 to-blue-100"
+    >
       <div className="bg-white shadow-lg rounded-lg p-8 md:w-1/3 w-11/12">
         {/* Branding */}
         <div className="text-center mb-6">
@@ -18,13 +43,14 @@ const Register = () => {
         </h2>
 
         {/* Register Form */}
-        <form>
+        <form onSubmit={handleRegister}>
           {/* Name Input */}
           <div className="mb-4 relative">
             <FaUser className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400" />
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Full Name"
               className="w-full py-3 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff7f50]"
               required
@@ -37,6 +63,7 @@ const Register = () => {
             <input
               type="url"
               id="photo-url"
+              name="photo"
               placeholder="Photo URL"
               className="w-full py-3 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff7f50]"
               required
@@ -49,6 +76,7 @@ const Register = () => {
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Email Address"
               className="w-full py-3 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff7f50]"
               required
@@ -61,6 +89,7 @@ const Register = () => {
             <input
               type="password"
               id="password"
+              name="password"
               placeholder="Password"
               className="w-full py-3 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff7f50]"
               required

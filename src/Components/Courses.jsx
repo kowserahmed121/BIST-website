@@ -12,7 +12,7 @@ const Courses = () => {
   }, []);
 
   return (
-    <div className="w-11/12 mx-auto py-10 md:py-16">
+    <div data-aos="zoom-out" className="w-11/12 mx-auto py-10">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-5xl font-bold text-gray-800 mb-4 md:mb-10">
           Let's Check Our <span className="text-orange-500">Courses</span>

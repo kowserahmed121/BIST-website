@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../Components/Banner";
 import AboutUs from "../Components/AboutUs";
 import Courses from "../Components/Courses";
@@ -8,8 +8,16 @@ import PhotoGallery from "../Components/PhotoGallery";
 import OurTeachers from "../Components/OurTeachers";
 import OurSkills from "../Components/OurSkills";
 import Contact from "../Components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }, []);
   return (
     <div>
       <Banner></Banner>

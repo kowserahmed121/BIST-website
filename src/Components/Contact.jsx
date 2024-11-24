@@ -8,8 +8,16 @@ import {
 
 const Contact = () => {
   return (
-    <div className="w-11/12 mx-auto py-10">
+    <div className="w-11/12 mx-auto py-6 md:py-14">
       {/* Contact Information Section */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-extrabold text-gray-800">
+          Contact <span className="text-orange-500">Information</span>
+        </h2>
+        <p className="mt-4 text-xl text-gray-600">
+          If you need any information please contact with us. 
+        </p>
+      </div>
       <div className="bg-white py-10 shadow-lg">
         <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Office Address */}

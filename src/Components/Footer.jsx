@@ -96,7 +96,7 @@ const Footer = () => {
           <FaInstagram className="cursor-pointer hover:text-orange-500" />
         </div>
         <p className="text-gray-400">
-          © {new Date().getFullYear()} Md Kowser Ahmed
+          © {new Date().getFullYear()} MD KOWSER AHMED
           <small> (computer department-4th semester)</small>
         </p>
       </div>

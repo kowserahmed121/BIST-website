@@ -1,9 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaPen } from "react-icons/fa";
 import logo from "../assets/logo.jpg";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
+
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const links = (
-    <div className=" text-lg flex flex-col md:flex-row gap-4 md:gap-10 ">
+    <div className="text-lg flex flex-col md:flex-row gap-4 md:gap-10">
       <NavLink
         to="/"
         className={({ isActive }) =>
@@ -52,14 +58,33 @@ const Navbar = () => {
             : "text-gray-800 hover:text-orange-500 transition-all duration-300"
         }
       >
-        Contact
+        {user?.email ? `Contact ${user.email}` : "Contact"}
       </NavLink>
     </div>
   );
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="navbar  w-11/12 mx-auto">
-        <div className="navbar-start py-4">
+    <div className="sticky top-0 z-50 transition-all duration-300">
+      <div
+        className={`navbar px-10 py-6 bg-white shadow-md ${
+          isScrolled ? "bg-opacity-70 backdrop-blur-md" : ""
+        } transition-all duration-500 ease-in-out`}
+      >
+        <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -96,16 +121,28 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <Link
-            to="/auth/login"
-            className="bg-orange-500 text-white font-semibold py-3 px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
-            style={{
-              borderRadius: "20px 30px 30px 0px",
-            }}
-          >
-            <FaPen className="mr-2" />
-            Sign In
-          </Link>
+          {user?.email ? (
+            <button
+              onClick={logOut}
+              style={{
+                borderRadius: "20px 30px 30px 0px",
+              }}
+              className="bg-orange-500 text-white font-semibold py-3 px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
+            >
+              Log Out
+            </button>
+          ) : (
+            <Link
+              to="/auth/login"
+              className="bg-orange-500 text-white font-semibold py-3 px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
+              style={{
+                borderRadius: "20px 30px 30px 0px",
+              }}
+            >
+              <FaPen className="mr-2" />
+              Sign In
+            </Link>
+          )}
         </div>
       </div>
     </div>

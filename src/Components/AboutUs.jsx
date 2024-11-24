@@ -12,7 +12,10 @@ import img1 from "../assets/banner3.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-50 w-11/12 mx-auto py-8 md:py-20">
+    <div
+      data-aos="flip-right"
+      className="bg-gray-50 w-11/12 mx-auto py-8 md:py-20"
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">

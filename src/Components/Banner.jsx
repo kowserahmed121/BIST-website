@@ -19,7 +19,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-gray-900 relative">
+    <div data-aos="zoom-in" className="w-full h-screen bg-gray-900 relative">
       <Slider {...settings}>
         {/* Slide 1 */}
         <div className="relative">

@@ -11,6 +11,7 @@ import Contact from "./Components/Contact";
 import AuthLayout from "./Page/AuthLayout";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
+import AuthProvider from "./Provider/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />{" "}
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

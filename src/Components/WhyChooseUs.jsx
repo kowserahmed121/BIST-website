@@ -9,7 +9,8 @@ import {
 const WhyChooseUs = () => {
   return (
     <section
-      className="relative py-16 bg-gradient-to-r from-blue-900 to-indigo-800 "
+      data-aos="flip-left"
+      className="relative pb-16 pt-8 bg-gradient-to-r from-blue-900 to-indigo-800 "
       style={{
         backgroundImage:
           "url('https://source.unsplash.com/1600x900/?technology,education')",
@@ -19,9 +20,7 @@ const WhyChooseUs = () => {
       }}
     >
       <div className="w-11/12 mx-auto text-center space-y-6">
-        <h2 className="text-lg font-semibold text-orange-400">
-          WHY CHOOSE US
-        </h2>
+        <h2 className="text-lg font-semibold text-orange-400">WHY CHOOSE US</h2>
         <h1 className="text-4xl font-bold">
           Discover the <span className="text-orange-500">BIST Advantage</span>
         </h1>
