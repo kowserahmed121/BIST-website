@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"; // ফ্রেমার মোশন ইম্পোর্ট করুন
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
@@ -12,7 +13,7 @@ const Courses = () => {
   }, []);
 
   return (
-    <div data-aos="zoom-out" className="w-11/12 mx-auto py-10">
+    <div className="w-11/12 mx-auto py-10">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-5xl font-bold text-gray-800 mb-4 md:mb-10">
           Let's Check Our <span className="text-orange-500">Courses</span>
@@ -23,10 +24,16 @@ const Courses = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          {courses.slice(0, 6).map((course) => (
-            <div
+          {courses.slice(0, 6).map((course, index) => (
+            <motion.div
               key={course.id}
               className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.3, // এই অংশে প্রতিটি কাডের জন্য আলাদা দেরি হবে
+              }}
             >
               <div className="relative">
                 <img
@@ -66,12 +73,12 @@ const Courses = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         <Link
           to="/courses"
-          className="bg-orange-500 mt-12 text-white font-semibold py-3 px-10  items-center hover:bg-[#116e63] shadow-md relative inline-block"
+          className="bg-orange-500 mt-12 text-white font-semibold py-3 px-10 items-center hover:bg-[#116e63] shadow-md relative inline-block"
           style={{
             borderRadius: "20px 30px 30px 0px",
           }}

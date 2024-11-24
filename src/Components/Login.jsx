@@ -1,10 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { FaGoogle, FaEnvelope, FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import toast, { Toaster } from "react-hot-toast"; // Add toast for error notifications
 
 const Login = () => {
-  const { signInUser, setUser } = useContext(AuthContext);
+  const { signInUser, setUser, googleSignIn, resetPassword } =
+    useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const emailRef = useRef(); // Fixed naming of the emailRef
+
+  // Handle Google Login
+  const handleGoogleLogin = () => {
+    googleSignIn()
+      .then((res) => {
+        const user = res.user;
+        setUser(user);
+        toast.success("Successfully logged in with Google!");
+        navigate(location?.state || "/");
+      })
+      .catch((err) => {
+        toast.error("Google login failed!");
+        console.log(err);
+      });
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -16,17 +36,38 @@ const Login = () => {
       .then((res) => {
         const user = res.user;
         setUser(user);
+        navigate(location?.state ? location.state : "/");
       })
       .catch((err) => {
         const error = err.message;
         console.log(error);
+        toast.error("Invalid email or password. Please try again.");
       });
   };
+
+  const handleForgetPassword = (e) => {
+    e.preventDefault(); // Prevent form submission or page reload
+    const email = emailRef.current.value;
+    if (!email) {
+      toast.error("Please provide a valid email");
+    } else {
+      resetPassword(email)
+        .then(() => {
+          toast.success("Password reset email sent");
+        })
+        .catch((error) => {
+          toast.error("Failed to send reset email");
+          console.error(error);
+        });
+    }
+  };
+
   return (
     <section
       data-aos="zoom-in"
       className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-200"
     >
+      <Toaster /> {/* Toast notifications */}
       <div className="bg-white shadow-lg rounded-lg p-8 md:w-1/3 w-11/12">
         {/* College Branding */}
         <div className="text-center mb-6">
@@ -50,6 +91,7 @@ const Login = () => {
               type="email"
               id="email"
               name="email"
+              ref={emailRef} // Fixed ref usage
               placeholder="Email Address"
               className="w-full py-3 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff7f50]"
               required
@@ -69,12 +111,12 @@ const Login = () => {
             />
           </div>
           <div className="text-right mb-6">
-            <a
-              href="/forgot-password"
+            <Link
+              onClick={handleForgetPassword}
               className="text-sm text-[#ff7f50] hover:underline"
             >
               Forgot Password?
-            </a>
+            </Link>
           </div>
 
           {/* Login Button */}
@@ -94,10 +136,12 @@ const Login = () => {
         </div>
 
         {/* Google Login */}
-        <button className="w-full flex items-center justify-center bg-[#4285F4] text-white py-3 rounded-md font-bold hover:scale-105 transition-transform duration-300 shadow-lg">
-          <FaGoogle className="mr-2" />
-          Login with Google
-        </button>
+        <Link
+          onClick={handleForgetPassword} // This keeps the form visible while calling the function
+          className="text-sm text-[#ff7f50] hover:underline"
+        >
+          Forgot Password?
+        </Link>
 
         {/* Register Option */}
         <div className="text-center mt-6">

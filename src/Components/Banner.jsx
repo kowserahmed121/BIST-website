@@ -7,6 +7,9 @@ import banner from "../assets/banner.jpg";
 import banner1 from "../assets/banner1.jpg";
 import banner2 from "../assets/banner2.jpg";
 import { IoBookOutline } from "react-icons/io5";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
 const Banner = () => {
   const settings = {
     dots: false, // ডটস সরানো হয়েছে
@@ -43,14 +46,15 @@ const Banner = () => {
                 knowledge, and success.
               </p>
               <div className="flex items-center gap-8">
-                <button
+                <Link
+                  to="/about"
                   className="bg-orange-500 text-white font-semibold py-3 px-10 flex items-center hover:bg-[#116e63] shadow-md relative"
                   style={{
                     borderRadius: "20px 30px 30px 0px",
                   }}
                 >
                   About More
-                </button>
+                </Link>
                 <button
                   className="bg-white  font-semibold py-3 px-10 flex items-center hover:bg-orange-500 hover:text-white shadow-md relative"
                   style={{

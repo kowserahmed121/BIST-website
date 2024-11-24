@@ -1,0 +1,347 @@
+[
+  {
+    "id": 1,
+    "course_name": "Diploma in Mechanical Engineering",
+    "image": "https://i.ibb.co.com/KrMFTQh/305570055-379281624400934-7871601823722883934-n.jpg",
+    "rating": 4.5,
+    "description": "This course introduces the fundamentals of mechanical engineering, including thermodynamics, machine design, fluid mechanics, and manufacturing processes. It prepares students to understand and design complex mechanical systems.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 50,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Basic knowledge of physics and mathematics.",
+    "subjects": [
+      "Thermodynamics",
+      "Fluid Mechanics",
+      "Material Science",
+      "Engineering Design",
+      "Manufacturing Processes"
+    ],
+    "career_opportunities": [
+      "Mechanical Engineer",
+      "Design Engineer",
+      "Production Engineer",
+      "Quality Assurance Engineer"
+    ],
+    "faculty": "Highly experienced professors with industry background.",
+    "campus_facilities": [
+      "Modern laboratories",
+      "Workshops",
+      "Research centers",
+      "Career counseling",
+      "24/7 Library Access"
+    ],
+    "extra_information": "Students will have opportunities to work on real-world projects, participate in internships, and explore cutting-edge technologies in mechanical engineering.",
+    "success_stories": [
+      {
+        "name": "John Doe",
+        "job_title": "Senior Mechanical Engineer at ABC Corp",
+        "quote": "This course helped me gain in-depth knowledge and build a successful career in mechanical engineering."
+      },
+      {
+        "name": "Jane Smith",
+        "job_title": "Design Specialist at XYZ Ltd",
+        "quote": "The hands-on experience I gained during this course was invaluable in my professional journey."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "course_name": "Diploma in Computer Technology",
+    "image": "https://i.ibb.co.com/PDHpFxJ/242079815-279750110649411-9009763809927410851-n.jpg",
+    "rating": 4.7,
+    "description": "The program focuses on programming, networking, web development, and IT fundamentals, equipping students with the necessary skills to excel in the fast-paced tech industry.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 55,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Basic computer skills and logical thinking.",
+    "subjects": [
+      "Programming in C and Java",
+      "Web Development",
+      "Data Structures",
+      "Database Management",
+      "Computer Networking"
+    ],
+    "career_opportunities": [
+      "Software Developer",
+      "Web Developer",
+      "Network Administrator",
+      "IT Support Specialist"
+    ],
+    "faculty": "Expert instructors with strong IT industry experience.",
+    "campus_facilities": [
+      "Computer labs",
+      "Dedicated servers",
+      "Seminar halls",
+      "Internship opportunities",
+      "Advanced networking labs"
+    ],
+    "extra_information": "This course provides hands-on experience in modern software tools, collaboration with IT professionals, and opportunities for certifications in programming and networking.",
+    "success_stories": [
+      {
+        "name": "Alice Brown",
+        "job_title": "Full-Stack Developer at DEF Tech",
+        "quote": "The curriculum prepared me for real-world challenges, and the faculty support was phenomenal."
+      },
+      {
+        "name": "Robert Green",
+        "job_title": "Network Engineer at GHI Solutions",
+        "quote": "The practical labs and projects were instrumental in landing my first job in IT."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "course_name": "Diploma in Electrical Engineering",
+    "image": "https://i.ibb.co.com/55yfKkd/274154483-373140024643752-4941556462851882176-n.jpg",
+    "rating": 4.6,
+    "description": "The course emphasizes electrical circuits, power systems, electronics, and renewable energy, preparing students for challenges in electrical engineering.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 52,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Basic understanding of physics.",
+    "subjects": [
+      "Electrical Circuits",
+      "Power Systems",
+      "Electronics",
+      "Microcontrollers",
+      "Renewable Energy"
+    ],
+    "career_opportunities": [
+      "Electrical Engineer",
+      "Power Systems Specialist",
+      "Automation Engineer",
+      "Energy Consultant"
+    ],
+    "faculty": "Dedicated faculty with expertise in electrical engineering and renewable energy.",
+    "campus_facilities": [
+      "State-of-the-art electrical labs",
+      "Research opportunities",
+      "Internships with energy firms",
+      "Student innovation programs"
+    ],
+    "extra_information": "Students gain practical experience in designing and troubleshooting electrical systems.",
+    "success_stories": [
+      {
+        "name": "David White",
+        "job_title": "Energy Consultant at Renewable Power Inc.",
+        "quote": "This course provided me with the skills to contribute to sustainable energy solutions."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "course_name": "Diploma in Civil Technology",
+    "image": "https://i.ibb.co/qrFmrNt/130541145-115245393766551-4856516181470762763-n.jpg",
+    "rating": 4.4,
+    "description": "Learn the art of structural design, construction management, and advanced surveying.",
+    "seats": 60,
+    "duration": "4 years",
+    "money": "৳ 53,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Basic mathematics and technical drawing skills.",
+    "subjects": [
+      "Structural Analysis",
+      "Geotechnical Engineering",
+      "Building Materials",
+      "Project Management",
+      "Construction Surveying"
+    ],
+    "career_opportunities": [
+      "Civil Engineer",
+      "Construction Manager",
+      "Structural Designer",
+      "Survey Engineer"
+    ],
+    "faculty": "Experienced professionals with practical industry experience.",
+    "campus_facilities": [
+      "Construction labs",
+      "Model making studios",
+      "Advanced surveying equipment",
+      "Industry partnerships"
+    ],
+    "extra_information": "Includes site visits and hands-on projects to understand real-world challenges in civil engineering."
+  },
+  {
+    "id": 5,
+    "course_name": "Diploma in Architecture Technology",
+    "image": "https://i.ibb.co/bb0HXKb/294418463-467550225202731-8470650264475387099-n.jpg",
+    "rating": 4.8,
+    "description": "This program covers architectural design, construction drawing, and sustainable building techniques, preparing students to become skilled architectural technologists.",
+    "seats": 50,
+    "duration": "4 years",
+    "money": "৳ 56,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Basic drawing skills and creativity.",
+    "subjects": [
+      "Architectural Design",
+      "Building Construction",
+      "Sustainable Architecture",
+      "Interior Design",
+      "Urban Planning"
+    ],
+    "career_opportunities": [
+      "Architectural Technologist",
+      "Interior Designer",
+      "Urban Planner",
+      "Sustainable Design Consultant"
+    ],
+    "faculty": "Professionals with years of experience in architecture and sustainable design.",
+    "campus_facilities": [
+      "Design studios",
+      "Construction labs",
+      "3D modeling workshops",
+      "Modern CAD software"
+    ],
+    "extra_information": "Students will work on real-world projects and gain exposure to the latest tools and technologies in architecture.",
+    "success_stories": [
+      {
+        "name": "Emily Watson",
+        "job_title": "Architectural Designer at Studio A",
+        "quote": "This course gave me the skills and confidence to excel in architectural design."
+      },
+      {
+        "name": "Chris Lee",
+        "job_title": "Sustainability Consultant at EcoBuild",
+        "quote": "Learning sustainable architecture here was a life-changing experience."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "course_name": "Diploma in Electronics Technology",
+    "image": "https://i.ibb.co/zJzW654/253134306-310930470864708-700481019156233325-n.jpg",
+    "rating": 4.5,
+    "description": "Focus on electronics circuits, digital systems, and communication technologies, offering a strong foundation for a career in electronics and telecommunications.",
+    "seats": 55,
+    "duration": "4 years",
+    "money": "৳ 54,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Basic knowledge of physics and mathematics.",
+    "subjects": [
+      "Circuit Analysis",
+      "Digital Electronics",
+      "Microprocessors",
+      "Telecommunication Systems",
+      "Embedded Systems"
+    ],
+    "career_opportunities": [
+      "Electronics Engineer",
+      "Telecommunication Specialist",
+      "Embedded Systems Developer",
+      "Technical Support Engineer"
+    ],
+    "faculty": "Highly skilled instructors with industry certifications.",
+    "campus_facilities": [
+      "Electronics labs",
+      "Simulation software",
+      "Practical workshops",
+      "Industry collaboration projects"
+    ],
+    "extra_information": "Includes hands-on training in modern electronic equipment and systems.",
+    "success_stories": [
+      {
+        "name": "Mia Thompson",
+        "job_title": "Embedded Systems Engineer at TechPulse",
+        "quote": "This course gave me the confidence to tackle complex electronic projects."
+      },
+      {
+        "name": "Jack Brown",
+        "job_title": "Telecom Specialist at ConnectX",
+        "quote": "The telecommunication systems training was incredibly valuable for my career."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "course_name": "Diploma in Automobile Technology",
+    "image": "https://i.ibb.co/ZhbXfSs/252910878-310930487531373-1776561447953916403-n.jpg",
+    "rating": 4.6,
+    "description": "Specialize in automotive systems, vehicle design, and maintenance, offering hands-on experience with modern automobile technologies.",
+    "seats": 40,
+    "duration": "4 years",
+    "money": "৳ 60,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Interest in automobiles and basic mechanical knowledge.",
+    "subjects": [
+      "Automotive Engineering",
+      "Vehicle Dynamics",
+      "Engine Design",
+      "Hybrid and Electric Vehicles",
+      "Automobile Maintenance"
+    ],
+    "career_opportunities": [
+      "Automobile Engineer",
+      "Vehicle Maintenance Manager",
+      "Quality Control Specialist",
+      "Automotive Designer"
+    ],
+    "faculty": "Experienced automobile engineers and industry experts.",
+    "campus_facilities": [
+      "Automotive workshops",
+      "Engine testing labs",
+      "Vehicle simulation tools",
+      "Industry internships"
+    ],
+    "extra_information": "Students get practical exposure to hybrid and electric vehicle technologies.",
+    "success_stories": [
+      {
+        "name": "Samuel Davis",
+        "job_title": "Automotive Engineer at AutoTech",
+        "quote": "The practical workshops helped me understand real-world automobile challenges."
+      },
+      {
+        "name": "Nina Carter",
+        "job_title": "Quality Control Specialist at SpeedMotors",
+        "quote": "This program equipped me with the skills to excel in the automotive industry."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "course_name": "Diploma in Textile Technology",
+    "image": "https://i.ibb.co/qkq1fsj/291624651-457733169517770-1187731978864082552-n.jpg",
+    "rating": 4.3,
+    "description": "Dive into textile production, fabric design, dyeing techniques, and quality control, preparing students for a career in the thriving textile industry.",
+    "seats": 45,
+    "duration": "4 years",
+    "money": "৳ 48,000/year",
+    "semester": "8 semesters",
+    "prerequisites": "Interest in textiles and basic science knowledge.",
+    "subjects": [
+      "Textile Production",
+      "Fabric Design",
+      "Dyeing and Finishing",
+      "Textile Machinery",
+      "Quality Control"
+    ],
+    "career_opportunities": [
+      "Textile Engineer",
+      "Fabric Designer",
+      "Production Manager",
+      "Quality Assurance Specialist"
+    ],
+    "faculty": "Textile experts with years of academic and industrial experience.",
+    "campus_facilities": [
+      "Textile workshops",
+      "Dyeing labs",
+      "Modern machinery",
+      "Internship opportunities"
+    ],
+    "extra_information": "Students will have access to the latest advancements in textile technologies and industry practices.",
+    "success_stories": [
+      {
+        "name": "Olivia Harris",
+        "job_title": "Fabric Designer at StyleTextiles",
+        "quote": "The hands-on training gave me the confidence to create innovative fabric designs."
+      },
+      {
+        "name": "Liam Wilson",
+        "job_title": "Quality Assurance Manager at TexPro",
+        "quote": "This program helped me master quality control processes in the textile industry."
+      }
+    ]
+  }
+]

@@ -24,7 +24,7 @@ const OurTeachers = () => {
       id: 4,
       name: "Dennis A. Pruitt",
       role: "Associate Professor",
-      image: "https://i.ibb.co.com/PTjYY3Z/055-removebg-preview.png",
+      image: "https://i.ibb.co.com/WxFGTY7/01-removebg-preview.png",
     },
   ]);
 

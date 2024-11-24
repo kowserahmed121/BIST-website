@@ -12,6 +12,8 @@ import AuthLayout from "./Page/AuthLayout";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import AuthProvider from "./Provider/AuthProvider";
+import CourseDetails from "./Page/CourseDetails";
+import PrivetRoute from "./Provider/PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "/courses",
         element: <AllCourses></AllCourses>,
+      },
+      {
+        path: "/course/:id",
+        element: (
+          <PrivetRoute>
+            <CourseDetails></CourseDetails>
+          </PrivetRoute>
+        ),
       },
       {
         path: "/about",

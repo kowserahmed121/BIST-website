@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaPen } from "react-icons/fa";
+import { FaPen, FaUser, FaSignOutAlt } from "react-icons/fa";
 import logo from "../assets/logo.jpg";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -7,6 +7,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // For the dropdown
 
   const links = (
     <div className="text-lg flex flex-col md:flex-row gap-4 md:gap-10">
@@ -58,7 +59,7 @@ const Navbar = () => {
             : "text-gray-800 hover:text-orange-500 transition-all duration-300"
         }
       >
-        {user?.email ? `Contact ${user.email}` : "Contact"}
+        Contact
       </NavLink>
     </div>
   );
@@ -76,6 +77,18 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown
+  };
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        setIsDropdownOpen(false); // Close dropdown after logout
+      })
+      .catch((error) => console.error("Error logging out:", error));
+  };
 
   return (
     <div className="sticky top-0 z-50 transition-all duration-300">
@@ -122,15 +135,36 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {user?.email ? (
-            <button
-              onClick={logOut}
-              style={{
-                borderRadius: "20px 30px 30px 0px",
-              }}
-              className="bg-orange-500 text-white font-semibold py-3 px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
-            >
-              Log Out
-            </button>
+            <div className="relative">
+              <img
+                src={user.photoURL}
+                alt="User Profile"
+                className="w-16 h-16 rounded-full cursor-pointer shadow-md"
+                onClick={toggleDropdown} // Show dropdown on click
+              />
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-300 z-10">
+                  <div className="py-2 px-4">
+                    <div className="flex items-center space-x-2">
+                      <FaUser />
+                      <span>{user.displayName || "Profile"}</span>
+                    </div>
+                  </div>
+                  <div className="border-t border-gray-200">
+                    <button
+                      onClick={handleLogout}
+                      className="w-full text-left py-2 px-4 hover:bg-gray-100"
+                    >
+                      <div className="flex items-center space-x-2">
+                        <FaSignOutAlt />
+                        <span>Logout</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           ) : (
             <Link
               to="/auth/login"

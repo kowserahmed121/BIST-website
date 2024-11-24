@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { FaUser, FaEnvelope, FaLock, FaImage } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import toast, { Toaster } from "react-hot-toast"; // Add toast for error notifications
 
 const Register = () => {
-  const { createUser, setUser } = useContext(AuthContext);
-
+  const { createUser, setUser, updateUser } = useContext(AuthContext);
+  const [error, setError] = useState({});
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -14,11 +16,32 @@ const Register = () => {
     const photo = form.get("photo");
     const password = form.get("password");
 
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    if (!passwordRegex.test(password)) {
+      toast.error(
+        "need strong password include uppercase, lowrercase & number"
+      );
+      return;
+    }
+
+    if (password.length < 6) {
+      setError({ ...error, name: "password must be upto 6 character long" });
+      return;
+    }
+
     createUser(email, password)
       .then((res) => {
         const user = res.user;
         console.log(user);
         setUser(user);
+        updateUser({ displayName: name, photoURL: photo })
+          .then(() => {
+            navigate("/");
+          })
+          .catch((err) => {
+            console.log(err);
+            toast.error("Invalid email or password. Please try again.");
+          });
       })
       .catch((err) => {
         const error = err.message;
@@ -30,6 +53,7 @@ const Register = () => {
       data-aos="zoom-in"
       className="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-100 to-blue-100"
     >
+      <Toaster></Toaster>
       <div className="bg-white shadow-lg rounded-lg p-8 md:w-1/3 w-11/12">
         {/* Branding */}
         <div className="text-center mb-6">
@@ -94,6 +118,7 @@ const Register = () => {
               className="w-full py-3 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff7f50]"
               required
             />
+            {error.name && <p className="text-red-600">{error.name}</p>}
           </div>
 
           {/* Register Button */}
