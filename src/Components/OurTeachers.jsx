@@ -39,7 +39,7 @@ const OurTeachers = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto px-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-2 max-w-7xl mx-auto px-2">
         {teachers.map((teacher) => (
           <div
             key={teacher.id}

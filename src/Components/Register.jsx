@@ -8,6 +8,7 @@ const Register = () => {
   const { createUser, setUser, updateUser } = useContext(AuthContext);
   const [error, setError] = useState({});
   const navigate = useNavigate();
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -16,44 +17,45 @@ const Register = () => {
     const photo = form.get("photo");
     const password = form.get("password");
 
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    // Validate password: minimum 6 characters and should include letters and numbers
+    const passwordRegex = /^(?=.*[a-zA-Z0-9]).{6,}$/;
     if (!passwordRegex.test(password)) {
       toast.error(
-        "need strong password include uppercase, lowrercase & number"
+        "Password must be at least 6 characters long and contain letters and numbers"
       );
       return;
     }
 
-    if (password.length < 6) {
-      setError({ ...error, name: "password must be upto 6 character long" });
-      return;
-    }
-
+    // Create the user using createUser function
     createUser(email, password)
       .then((res) => {
         const user = res.user;
         console.log(user);
         setUser(user);
+
+        // Update user profile with name and photo URL
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
-            navigate("/");
+            toast.success("User registered successfully!");
+            navigate("/"); // Redirect to home page after successful registration
           })
           .catch((err) => {
-            console.log(err);
-            toast.error("Invalid email or password. Please try again.");
+            console.log("Error updating user profile:", err);
+            toast.error("Failed to update user profile. Please try again.");
           });
       })
       .catch((err) => {
-        const error = err.message;
-        console.log(error);
+        console.log("Error creating user:", err);
+        toast.error("Failed to create user. Please try again.");
       });
   };
+
   return (
     <section
       data-aos="zoom-in"
       className="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-100 to-blue-100"
     >
-      <Toaster></Toaster>
+      <Toaster /> {/* Toast notifications */}
       <div className="bg-white shadow-lg rounded-lg p-8 md:w-1/3 w-11/12">
         {/* Branding */}
         <div className="text-center mb-6">

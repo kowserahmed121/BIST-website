@@ -93,7 +93,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 transition-all duration-300">
       <div
-        className={`navbar px-10 py-6 bg-white shadow-md ${
+        className={`navbar px-2 md:px-10 md:py-6 py-4 bg-white shadow-md ${
           isScrolled ? "bg-opacity-70 backdrop-blur-md" : ""
         } transition-all duration-500 ease-in-out`}
       >
@@ -123,7 +123,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex gap-2 items-center">
-            <img className="h-12 w-12" src={logo} alt="" />
+            <img className="h-8 w-8 md:h-12 md:w-12" src={logo} alt="" />
             <h2 className="text-3xl font-bold">
               <span className="text-[#116e63]">BI</span>
               <span className="text-orange-500">ST</span>
@@ -168,7 +168,7 @@ const Navbar = () => {
           ) : (
             <Link
               to="/auth/login"
-              className="bg-orange-500 text-white font-semibold py-3 px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
+              className="bg-orange-500 text-white font-semibold       py-1 md:py-3 px-3 md:px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
               style={{
                 borderRadius: "20px 30px 30px 0px",
               }}

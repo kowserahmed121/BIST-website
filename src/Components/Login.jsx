@@ -136,12 +136,13 @@ const Login = () => {
         </div>
 
         {/* Google Login */}
-        <Link
-          onClick={handleForgetPassword} // This keeps the form visible while calling the function
-          className="text-sm text-[#ff7f50] hover:underline"
+        <button
+          onClick={handleGoogleLogin}
+          className="w-full flex items-center justify-center bg-[#4285F4] text-white py-3 rounded-md font-bold hover:scale-105 transition-transform duration-300 shadow-lg"
         >
-          Forgot Password?
-        </Link>
+          <FaGoogle className="mr-2" />
+          Login with Google
+        </button>
 
         {/* Register Option */}
         <div className="text-center mt-6">

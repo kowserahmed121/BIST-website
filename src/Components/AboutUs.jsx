@@ -25,7 +25,7 @@ const AboutUs = () => {
             </span>
             ABOUT US
           </h2>
-          <h1 className="text-4xl font-bold text-gray-800">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-800">
             Welcome to{" "}
             <span className="text-orange-500">
               BACE Institute of Science and Technology

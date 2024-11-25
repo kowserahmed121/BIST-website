@@ -37,7 +37,7 @@ const Banner = () => {
                 <IoBookOutline className=" text-4xl"></IoBookOutline> Welcome to
                 our BIST
               </h2>
-              <h1 className="text-6xl font-bold text-white">
+              <h1 className="text-3xl md:text-6xl font-bold text-white">
                 Start Your Beautiful <br /> And{" "}
                 <span className="text-orange-400">Bright</span> Future{" "}
               </h1>
@@ -48,7 +48,7 @@ const Banner = () => {
               <div className="flex items-center gap-8">
                 <Link
                   to="/about"
-                  className="bg-orange-500 text-white font-semibold py-3 px-10 flex items-center hover:bg-[#116e63] shadow-md relative"
+                  className="bg-orange-500 text-white font-semibold       py-1 md:py-3 px-3 md:px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
                   style={{
                     borderRadius: "20px 30px 30px 0px",
                   }}
@@ -78,8 +78,8 @@ const Banner = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="w-8/12 mx-auto space-y-8">
               <h2 className="text-orange-400  text-3xl font-bold uppercase flex items-center gap-2">
-                <IoBookOutline className=" text-4xl"></IoBookOutline> Welcome to
-                our BIST
+                <IoBookOutline className=" text-2xl md:text-4xl"></IoBookOutline>{" "}
+                Welcome to our BIST
               </h2>
               <h1 className="text-6xl font-bold text-white">
                 Start Your Beautiful <br /> And{" "}
@@ -128,7 +128,7 @@ const Banner = () => {
                 Start Your Beautiful <br /> And{" "}
                 <span className="text-orange-400">Bright</span> Future{" "}
               </h1>
-              <p className="text-white text-lg font-medium">
+              <p className="text-white text-md md:text-lg font-medium">
                 Join us in creating a future filled with opportunities,
                 knowledge, and success.
               </p>
@@ -142,7 +142,7 @@ const Banner = () => {
                   About More
                 </button>
                 <button
-                  className="bg-white  font-semibold md:py-3 py-1 px-6 md:px-10 flex items-center hover:bg-orange-500 hover:text-white shadow-md relative"
+                  className="bg-white font-semibold   py-1 md:py-3 px-3 md:px-6 flex items-center hover:bg-[#116e63] shadow-md relative"
                   style={{
                     borderRadius: "20px 30px 30px 0px",
                   }}
